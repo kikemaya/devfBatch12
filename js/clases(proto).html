@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <p id=""></p>
+
+    <script>
+
+        //azucar sintactico. Simplificacion de como escribir prototipos
+        // class Animal {
+            //método especial que se ejecuta en el momento de instancias la clase
+        //     constructor(nombre, genero) {
+        //         this.nombre = nombre
+        //         this.genero = genero
+        //     }
+        //     sonar() {
+        //         return 'Hago sonidos';
+        //     }
+        //     saludar(nombre) {
+        //         return `Hola, ${nombre}!`;
+        //     }
+        // }
+
+        // class Perro extends Animal {
+        //     constructor(nombre, genero, tamanio) {
+                //metodo que manda llamar el constructor de la clase padre
+        //         super(nombre, genero)
+        //         this.tamanio = tamanio
+                
+        //     }
+        // }
+
+        // let perro = new Perro('Snoopy', 'Masho', 'big')
+        // console.log(perro);
+        // console.log(perro.saludar('Enrique'));
+
+        //Esconde metodos y atributos(en js, todo es público). No permitir su alteracion.
+
+        class Animal {
+            constructor(name) {
+                this.name = name
+            }
+            makeSound() {
+                console.log("Generic animal sound")
+            }
+        }
+
+        class Dog extends Animal {
+            constructor(name) {
+                super(name)
+            }
+            makeSound() {
+                super.makeSound()
+                return "Sound of a dog"
+            }
+        }
+
+        const a1 = new Animal('Bobby')
+        const a2 = new Dog('Big BOY')
+
+        a1.makeSound()
+        console.log(a2.makeSound())
+
+    </script>
+</body>
+</html>

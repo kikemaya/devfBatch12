@@ -1,0 +1,33 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.contenedor {
+    width: 90%;
+    background-color: yellow;
+    max-width: 1000px;
+    margin: 100px auto;
+    
+    /* DEFINIR EL TIPO DE DISPLAY */
+    display: grid;
+    
+    /* DEFINIR EL TAMAÑO EN COLUMNAS Y EN FILAS */
+    grid-template-columns: 200px 200px 200px;
+    /* grid-template-columns: repeat(3, 1fr); */
+    grid-template-rows: repeat(3, auto);
+    
+    /*GENERA MARGENES, ENTRE LOS ELEMENTOS. NO AFUERA.*/
+    /* grid-row-gap: 20px; */
+    /* grid-column-gap: 20px; */
+    grid-gap: 20px; 
+}
+.contenedor > * {
+    background-color: red;
+    padding: 20px;
+}
+.h-head {
+    /* POSICIONAR ELEMENTOS HIJOS DE FORMA ESPECIFICA, DENTRO DE LA GRILLA */
+    grid-column: 1/ 2;
+    grid-row: 1/ 5;
+}

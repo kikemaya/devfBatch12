@@ -1,0 +1,31 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.main-content {
+  background-color: rgba(0, 0, 0, 0.8);
+  padding: 30px;
+}
+.main-content h2 {
+  color: white;
+  padding: 30px;
+}
+.main-content div {
+  height: 100px;
+  width: 100px;
+  border-radius: 50%;
+  background-color: orangered;
+  margin-left: 25px;
+  display: inline-block;
+}
+.main-content div p {
+  text-align: center;
+  padding-top: 25px;
+  color: white;
+  border-bottom: 5px solid white;
+}
+.main-content div p span {
+  font-weight: bold;
+  font-size: 20px;
+}

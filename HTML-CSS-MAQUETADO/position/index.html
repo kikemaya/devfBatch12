@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <!-- <link rel="icon" type="image/png" href="/devfChal/img/logo.ico"> -->
+    <link rel="icon" type="image/icon" href="/devfChal/img/logo.ico"> 
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .container {
+            height:500px;
+            background-color: yellow;    
+            padding: 20px;
+            margin-top: 50px;
+            position: relative;
+        }
+        .container div {
+            height: 100px;
+            width: 100px;
+            background-color: red;
+        }
+        .container div:first-child {
+            /* position: relative;
+            left: 0;
+            top: 0; */
+            /*Si no hay un position relative cerca, mi padre, es el body*/ 
+            /* position: absolute; */
+            /* left: calc(50% - 50px);
+            top: calc(50% - 50px); */
+            left: 20px;
+            
+            border: 1px solid blue;
+        }
+    </style>
+</head>
+<body>
+    
+    <div class="container">
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+        <div>4</div>
+    </div>
+    
+</body>
+</html>

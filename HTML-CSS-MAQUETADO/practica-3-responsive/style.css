@@ -1,0 +1,19 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    background-color: blue;
+}
+@media only screen and (max-width: 879px) {
+    
+}
+@media only screen and (min-width: 879px) {
+    
+}
+@media only screen and (min-width: 400px) and (max-width: 600px) {
+    body {
+        background-color: violet;
+    }
+}

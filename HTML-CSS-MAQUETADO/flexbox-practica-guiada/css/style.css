@@ -1,0 +1,14 @@
+.flex-container {
+    display: flex;
+    background-color: yellow;
+    justify-content:space-evenly;
+    flex-direction: column-reverse;
+    /*align-items: flex-start; */
+    width: 70%;
+}
+.flex-container div{
+    height: 100px;
+    width: 100px;
+    background-color: green;
+    margin: 10px;
+}
