@@ -1,0 +1,3 @@
+Clon de Pinterest
+ 
+Haciendo uso de HTML y CSS, recrea la página principal de pinterest lo más fiel posible a la página original. La página debe ser responsiva, es decir, al cambiar el tamaño de la pantalla o al visualizar la página en distintos dispositivos, el contenido debe ajustarse acordemente. Utiliza lo que has aprendido hasta el momento y siéntete libre de utilizar cualquier recurso que encuentres en internet que te permita lograr tu objetivo.

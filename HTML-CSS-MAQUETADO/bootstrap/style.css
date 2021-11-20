@@ -1,0 +1,11 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.my-bg {
+    background-color: green;
+}
+.bd-y {
+    border: 1px solid yellow;
+}
