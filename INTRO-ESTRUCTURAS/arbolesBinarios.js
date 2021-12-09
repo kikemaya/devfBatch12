@@ -55,6 +55,34 @@ class ArbolBinario {
   print() {
     console.log('this.root ', this.root);
   }
+
+  find(value) {
+    let arbolBinario = this.root;
+    let encontrar = false;
+    let contador = 0;
+    while (!encontrar) {
+      contador++
+      if (!arbolBinario) {
+        encontrar = true;
+        return;
+      }
+
+      if (value === arbolBinario.value) {
+        encontrar = true;
+        return `El valor fue encontrado, valor.- ${value} las iteraciones fueron.- ${contador}`;
+      }
+
+      if (value !== arbolBinario.value) {
+        if (value < arbolBinario.value) {
+          arbolBinario = arbolBinario.left;
+        }
+
+        if (value > arbolBinario.value) {
+          arbolBinario = arbolBinario.right;
+        }
+      }
+    }
+  }
 }
 
 const arbolBinario = new ArbolBinario;
@@ -66,3 +94,19 @@ arbolBinario.insertar(45);
 arbolBinario.insertar(38);
 arbolBinario.insertar(70);
 arbolBinario.print();
+console.log(arbolBinario.find(38));
+
+//Comparación de algoritmo de busqueda lineal vs arbol binario
+function algoritmoBusquedaLineal(valor) {
+  const datosNumericos = [50,55,40,45,38,70];
+  let respuesta = '';
+  datosNumericos.forEach((datosNumerico, index) => {
+    if (datosNumerico === valor) {
+      respuesta = `El valor fue encontrado, valor.- ${valor} las iteraciones fueron.- ${index + 1}`;
+    }
+  })
+
+  return respuesta;
+}
+
+console.log(algoritmoBusquedaLineal(38));
