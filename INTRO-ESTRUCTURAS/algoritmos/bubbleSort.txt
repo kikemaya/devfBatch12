@@ -1,0 +1,19 @@
+pseudocódigo basado en javascript que ordene (n)cantidad de números, implementando Bubble Sort.
+
+INICIO
+    DECLARACION DE ARREGLO var arr = [5, 4, 3, 2, 1];
+    INICIA Funcion bubbleSort(numeros)
+        DEFINIR let n = numeros.length 
+        INICIA FOR (var i = 0; i < n; i++)
+            INICIA FOR (j = 0; j < (n - j); j++)
+                INICIA IF (numeros[j] > numeros[j+1])
+                    DEFINIR var correcto = numeros[j]
+                    DECLARACION DE ACOMODO numeros[j] = numeros[j+1]; 
+                    DECLARACION DE ACOMODO numeros[j+1] = correcto;
+                FIN IF
+            FIN FOR
+        FIN FOR
+        RETORNAR arr
+    FIN Funcion
+    IMPRIME bubbleSort(ARREGLO);
+FIN

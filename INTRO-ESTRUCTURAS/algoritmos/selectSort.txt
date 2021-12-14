@@ -1,0 +1,29 @@
+pseudocódigo basado en javascript que ordene (n)cantidad de números,
+implementando Select Sort.
+
+'use strict'
+
+DEFINIR var Arr = [0, 7, 4, 9, 3, 5, 1, 2, 6, 8];
+DEFINIR let n = Arr.length;
+
+INICIA FOR(let i = 0; i < n; i++) {
+    DEFINIR let min = i;
+    INICIA FOR (let j = i + 1; j < n; j++){
+        INICIA IF (Arr[j] < Arr[min]) {
+            //Se establece la posicion minima
+            min = j; 
+        FIN IF
+    FIN FOR
+    //Se pregunta, si la posicion minima, cambió con respecto al indice de la primera iteración
+    INICIA IF (min != i) {
+        //En esta parte del código, se hace el swap
+        DEFINE let aux = Arr[i]; 
+        Arr[i] = Arr[min];
+        Arr[min] = aux;      
+    FIN IF
+FIN FOR
+
+IMPRIME ARR
+RETORNAR ARR
+
+FIN

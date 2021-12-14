@@ -1,0 +1,23 @@
+Primero, tenemos una lista de numeros en desorden
+- Se dividie en dos grupos, a su vez, los dos grupos, se dividen en grupos mas pequeños sucesivamente hasta alcanzar la unidad.
+
+divide y venceras
+divide y mezcla(ordenada)
+
+10
+
+5            5
+2 3          2 3
+1 1, 1 2     1 1, 1 2
+1 1 1 1 1    1 1 1 1 1
+
+HACIA ABAJO
+axioma
+[] o [1], está ordenado por definición.
+
+- Separar el arreglo en dos sub arreglos de la mitad de tamaño(mitad izq y mitad derecha).
+- ordeno cada arreglo de forma recursiva
+- SIEMPRE necesito una salida de recursión(axioma)
+
+HACIA ARRIBA
+- mezclar hacia arriba los elementos y las mitades, hasta tener dos mitades ordenadas y a su vez, ordenarlas en uno solo y retornarlo.
